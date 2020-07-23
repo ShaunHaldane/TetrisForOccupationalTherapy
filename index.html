@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>Javascript Tetris</title>
+    <style>
+        #score {
+            display: inline-block;
+        }
+
+        div {
+            font-size: 25px;
+            font-weight: bold;
+            font-family: monospace;
+            text-align: center;
+            color: red;
+        }
+
+        canvas {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body style="background-color: white;">
+    <div>Tetris</div><br>
+    <div><button id="StartButton" onclick="runTetris()">Click Here to Start</button></div>
+    <br>
+    <canvas id="tetris" width="200" height="400"></canvas>
+    <div>
+        <div id="scoreChange">Score : <div id="score">0</div>
+        </div><br>
+    </div>
+    <div><button id="StartButton" onclick="Restart()">Click Here for Another Game</button></div>
+
+    <audio id="brickSound">
+        <source src="BrickSound.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="tetrisMusic">
+        <source src="TetrisMusic.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="tetrisRow">
+        <source src="Row.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="tetrominoes.js"></script>
+    <script src="tetris.js"></script>
+</body>
+
+</html>
